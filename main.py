@@ -1,1 +1,11 @@
-import qrcode
+try:
+    import qrcode as qr
+    data = input("Please enter the data you want to encode in the QR code: \n")
+    name = input("kindly enter name for QR code (without extentsion) :\n")
+    img=qr.make(data)
+    
+
+except Exception as e:
+    print(f"An error is occured {e}")
+
+    
